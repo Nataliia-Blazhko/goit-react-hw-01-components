@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./profile.scss";
 
 function Profile({name,tag,location,avatar,stats}) {
 
