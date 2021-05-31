@@ -1,5 +1,11 @@
 import React from 'react'
-import "./statistics.scss"
+import "./statistics.scss";
+
+function getRandomColors(){
+return {
+  background: `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`};
+
+}
 
 function Statistics ({title,stats}){
 
@@ -8,7 +14,8 @@ function Statistics ({title,stats}){
     {title && <h2 class="title">{title}</h2>}
 
   <ul class="stat-list">
-    {stats.map((stat)=> (<li class="item">
+    {stats.map((stat)=> (<li class="item" style={getRandomColors()}>
+
       <span class="label">{stat.label}</span>
       <span class="percentage">{stat.percentage}</span>
     </li> ))}
