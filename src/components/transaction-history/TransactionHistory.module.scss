@@ -1,0 +1,20 @@
+.transaction-history {
+  margin: 0 auto;
+  width: 320px;
+  background: white;
+  padding-top: 20px;
+  //   th,
+  //   td {
+  //     padding: 10px 5px;
+  //     border: 0.5px solid lighten($color: #b0b9c0, $amount: 10);
+  //   }
+  td {
+    border-right: 1px solid lighten($color: #b0b9c0, $amount: 10);
+    // font-size: 20px;
+    // text-align: center;
+    // padding: 10px 0;
+  }
+  th {
+    border-bottom: 1px solid lighten($color: #b0b9c0, $amount: 10);
+  }
+}
