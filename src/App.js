@@ -1,8 +1,7 @@
-import './styles.scss';
-import Profile from './components/profile/Profile';
-import Statistics from './components/statistics/Statistics';
-import FriendList from './components/friend-list/FriendList';
-import TransactionHistory from './components/transaction-history/TransactionHistory';
+import { Profile } from './components/profile';
+import { Statistics } from './components/statistics';
+import { FriendList } from './components/friend-list';
+import { TransactionHistory } from './components/transaction-history';
 import user from './json/user.json';
 import statisticalData from './json/statistical-data.json';
 import friends from './json/friends.json';

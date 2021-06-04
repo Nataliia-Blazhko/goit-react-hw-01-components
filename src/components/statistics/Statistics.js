@@ -9,14 +9,14 @@ function getRandomColors() {
   };
 }
 
-function Statistics({ title, stats }) {
+export function Statistics({ title, stats }) {
   return (
     <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className={styles['stat-list']}>
         {stats.map(stat => (
-          <li className={styles.item} style={getRandomColors()}>
+          <li key={stat.id} className={styles.item} style={getRandomColors()}>
             <span className={styles.label}>{stat.label}</span>
             <span className={styles.percentage}>{stat.percentage}</span>
           </li>
@@ -25,5 +25,3 @@ function Statistics({ title, stats }) {
     </section>
   );
 }
-
-export default Statistics;

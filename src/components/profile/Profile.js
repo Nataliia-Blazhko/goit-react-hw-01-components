@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Profile.module.scss';
 
-function Profile({ name, tag, location, avatar, stats }) {
+export function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -28,5 +28,3 @@ function Profile({ name, tag, location, avatar, stats }) {
     </div>
   );
 }
-
-export default Profile;

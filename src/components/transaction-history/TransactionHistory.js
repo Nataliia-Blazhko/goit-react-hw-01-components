@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './TransactionHistory.module.scss';
 
-function TransactionHistory({ items }) {
+export function TransactionHistory({ items }) {
   return (
     <table className={styles['transaction-history']}>
       <thead>
@@ -14,7 +14,7 @@ function TransactionHistory({ items }) {
 
       <tbody>
         {items.map(item => (
-          <tr>
+          <tr key={item.id}>
             <td>{item.type}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
@@ -24,5 +24,3 @@ function TransactionHistory({ items }) {
     </table>
   );
 }
-
-export default TransactionHistory;
