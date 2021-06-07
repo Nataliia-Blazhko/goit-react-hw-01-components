@@ -18,10 +18,14 @@ export function Statistics({ title, stats }) {
         {stats.map(stat => (
           <li key={stat.id} className={styles.item} style={getRandomColors()}>
             <span className={styles.label}>{stat.label}</span>
-            <span className={styles.percentage}>{stat.percentage}</span>
+            <span className={styles.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
     </section>
   );
 }
+
+Statistics.defaultProps = {
+  title: '',
+};

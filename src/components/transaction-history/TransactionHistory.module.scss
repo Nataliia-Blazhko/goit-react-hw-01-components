@@ -2,31 +2,34 @@
   margin: 0 auto;
   width: 320px;
   background: white;
-  padding-top: 20px;
   border-collapse: collapse;
+
   th {
-    padding: 10px 5px;
-    border: 0.5px solid lighten($color: #b0b9c080, $amount: 10);
+    padding: 10px;
+    border: 0.5px solid darken($color: #b0b9c080, $amount: 10);
+    text-transform: uppercase;
+    font-size: 18px;
   }
   td {
-    border-right: 0.5px solid lighten($color: #b0b9c080, $amount: 10);
-    font-size: 20px;
+    border: 0.5px solid darken($color: #b0b9c080, $amount: 10);
+    font-size: 16px;
     text-align: center;
     padding: 10px 0;
-  }
-  th {
-    border-bottom: 0.5px solid lighten($color: #b0b9c0, $amount: 10);
+    &:first-child {
+      padding: 5px;
+      text-transform: capitalize;
+    }
   }
   thead {
     tr {
-      background: rgb(164, 96, 190);
+      background: rgb(221, 212, 223);
     }
   }
   tbody {
     tr {
-      background: rgb(233, 210, 233);
+      background: rgb(247, 223, 247);
       &:nth-child(2n) {
-        background: rgb(241, 239, 234);
+        background: rgb(240, 233, 235);
       }
     }
   }
